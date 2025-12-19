@@ -13,5 +13,5 @@ humidity = st.number_input("Humidity (%)")
 if st.button("Predict Weather"):
     input_data = [[temperature, humidity]]
     prediction = model.predict(input_data)
-    st.write(f"The predicted weather condition is: {prediction[0]}")
+    st.write(f"The predicted weather condition is: {prediction[0]:.2f}*C")
     
