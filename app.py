@@ -7,7 +7,7 @@ model = joblib.load('weather_model.pkl')
 st.title("Weather Predictor")
 st.write("Enter the weather parameters to predict the weather condition.")
 # Input fields for weather parameters
-temperature = st.number_input("Temperature (°C)")
+temperature = st.number_input("Hours of sunlight:")
 humidity = st.number_input("Humidity (%)")
 # Predict button
 if st.button("Predict Weather"):
